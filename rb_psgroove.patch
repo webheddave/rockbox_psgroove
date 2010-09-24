@@ -1,6 +1,6 @@
 Index: firmware/export/config.h
 ===================================================================
---- firmware/export/config.h	(revision 28156)
+--- firmware/export/config.h	(revision 28159)
 +++ firmware/export/config.h	(working copy)
 @@ -947,7 +947,7 @@
       defined(CPU_TCC77X) || defined(CPU_TCC780X))) || \
@@ -26,9 +26,126 @@ Index: firmware/export/config.h
  #else
  #define USB_ENABLE_CHARGING_ONLY
  #endif
+Index: firmware/export/config/gigabeats.h
+===================================================================
+--- firmware/export/config/gigabeats.h	(revision 28159)
++++ firmware/export/config/gigabeats.h	(working copy)
+@@ -207,7 +207,7 @@
+ #define USB_PORTSCX_PHY_TYPE PORTSCX_PTS_ULPI
+ #define USB_VENDOR_ID 0x0930
+ #define USB_PRODUCT_ID 0x0010
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have ATA power-off control */
+ #define HAVE_ATA_POWER_OFF
+Index: firmware/export/config/gogearhdd1630.h
+===================================================================
+--- firmware/export/config/gogearhdd1630.h	(revision 28159)
++++ firmware/export/config/gogearhdd1630.h	(working copy)
+@@ -191,7 +191,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x0471
+ #define USB_PRODUCT_ID 0x014C
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/gogearhdd6330.h
+===================================================================
+--- firmware/export/config/gogearhdd6330.h	(revision 28159)
++++ firmware/export/config/gogearhdd6330.h	(working copy)
+@@ -191,7 +191,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x0471
+ #define USB_PRODUCT_ID 0x014C
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/gogearsa9200.h
+===================================================================
+--- firmware/export/config/gogearsa9200.h	(revision 28159)
++++ firmware/export/config/gogearsa9200.h	(working copy)
+@@ -171,7 +171,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x0471
+ #define USB_PRODUCT_ID 0x014f
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* WARNING! Enable Rockbox USB mass storage. */
+ #ifndef BOOTLOADER
+Index: firmware/export/config/ipod4g.h
+===================================================================
+--- firmware/export/config/ipod4g.h	(revision 28159)
++++ firmware/export/config/ipod4g.h	(working copy)
+@@ -201,7 +201,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x05ac
+ #define USB_PRODUCT_ID 0x1203
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/ipodcolor.h
+===================================================================
+--- firmware/export/config/ipodcolor.h	(revision 28159)
++++ firmware/export/config/ipodcolor.h	(working copy)
+@@ -185,7 +185,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x05ac
+ #define USB_PRODUCT_ID 0x1204
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/ipodmini1g.h
+===================================================================
+--- firmware/export/config/ipodmini1g.h	(revision 28159)
++++ firmware/export/config/ipodmini1g.h	(working copy)
+@@ -194,7 +194,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x05ac
+ #define USB_PRODUCT_ID 0x1205
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/ipodmini2g.h
+===================================================================
+--- firmware/export/config/ipodmini2g.h	(revision 28159)
++++ firmware/export/config/ipodmini2g.h	(working copy)
+@@ -194,7 +194,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x05ac
+ #define USB_PRODUCT_ID 0x1205
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/ipodnano1g.h
+===================================================================
+--- firmware/export/config/ipodnano1g.h	(revision 28159)
++++ firmware/export/config/ipodnano1g.h	(working copy)
+@@ -182,7 +182,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x05ac
+ #define USB_PRODUCT_ID 0x120a
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
 Index: firmware/export/config/ipodvideo.h
 ===================================================================
---- firmware/export/config/ipodvideo.h	(revision 28156)
+--- firmware/export/config/ipodvideo.h	(revision 28159)
 +++ firmware/export/config/ipodvideo.h	(working copy)
 @@ -204,7 +204,7 @@
  #define USE_ROCKBOX_USB
@@ -39,9 +156,87 @@ Index: firmware/export/config/ipodvideo.h
  
  /* Define this if you have adjustable CPU frequency */
  #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/iriverh10.h
+===================================================================
+--- firmware/export/config/iriverh10.h	(revision 28159)
++++ firmware/export/config/iriverh10.h	(working copy)
+@@ -177,7 +177,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x0B70
+ #define USB_PRODUCT_ID 0x00BA
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/iriverh10_5gb.h
+===================================================================
+--- firmware/export/config/iriverh10_5gb.h	(revision 28159)
++++ firmware/export/config/iriverh10_5gb.h	(working copy)
+@@ -164,7 +164,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x0B70
+ #define USB_PRODUCT_ID 0x00BA
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/mrobe100.h
+===================================================================
+--- firmware/export/config/mrobe100.h	(revision 28159)
++++ firmware/export/config/mrobe100.h	(working copy)
+@@ -182,7 +182,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x07B4
+ #define USB_PRODUCT_ID 0x0280
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/sansac200.h
+===================================================================
+--- firmware/export/config/sansac200.h	(revision 28159)
++++ firmware/export/config/sansac200.h	(working copy)
+@@ -192,7 +192,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x0781
+ #define USB_PRODUCT_ID 0x7451
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/sansae200.h
+===================================================================
+--- firmware/export/config/sansae200.h	(revision 28159)
++++ firmware/export/config/sansae200.h	(working copy)
+@@ -189,7 +189,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x0781
+ #define USB_PRODUCT_ID 0x7421
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/vibe500.h
+===================================================================
+--- firmware/export/config/vibe500.h	(revision 28159)
++++ firmware/export/config/vibe500.h	(working copy)
+@@ -178,7 +178,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x0409
+ #define USB_PRODUCT_ID 0x8038
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
 Index: firmware/export/usb.h
 ===================================================================
---- firmware/export/usb.h	(revision 28156)
+--- firmware/export/usb.h	(revision 28159)
 +++ firmware/export/usb.h	(working copy)
 @@ -122,6 +122,7 @@
  #ifdef USB_ENABLE_HID
@@ -53,7 +248,7 @@ Index: firmware/export/usb.h
  
 Index: firmware/SOURCES
 ===================================================================
---- firmware/SOURCES	(revision 28156)
+--- firmware/SOURCES	(revision 28159)
 +++ firmware/SOURCES	(working copy)
 @@ -354,6 +354,7 @@
  /* USB Stack */
@@ -65,7 +260,7 @@ Index: firmware/SOURCES
  usbstack/usb_storage.c
 Index: firmware/target/arm/usb-drv-arc.c
 ===================================================================
---- firmware/target/arm/usb-drv-arc.c	(revision 28156)
+--- firmware/target/arm/usb-drv-arc.c	(revision 28159)
 +++ firmware/target/arm/usb-drv-arc.c	(working copy)
 @@ -435,11 +435,11 @@
  
@@ -107,7 +302,7 @@ Index: firmware/target/arm/usb-drv-arc.c
  /* manual: 32.14.4.1 Queue Head Initialization */
 Index: firmware/usb.c
 ===================================================================
---- firmware/usb.c	(revision 28156)
+--- firmware/usb.c	(revision 28159)
 +++ firmware/usb.c	(working copy)
 @@ -43,6 +43,7 @@
  #endif
@@ -1556,7 +1751,7 @@ Index: firmware/usbstack/psgroove_descriptors.h
 +};
 Index: firmware/usbstack/usb_core.c
 ===================================================================
---- firmware/usbstack/usb_core.c	(revision 28156)
+--- firmware/usbstack/usb_core.c	(revision 28159)
 +++ firmware/usbstack/usb_core.c	(working copy)
 @@ -47,6 +47,8 @@
  #include "usb_hid.h"
