@@ -1,6 +1,6 @@
 Index: firmware/export/config.h
 ===================================================================
---- firmware/export/config.h	(revision 28159)
+--- firmware/export/config.h	(revision 28160)
 +++ firmware/export/config.h	(working copy)
 @@ -947,7 +947,7 @@
       defined(CPU_TCC77X) || defined(CPU_TCC780X))) || \
@@ -26,22 +26,22 @@ Index: firmware/export/config.h
  #else
  #define USB_ENABLE_CHARGING_ONLY
  #endif
-Index: firmware/export/config/gigabeats.h
+Index: firmware/export/config/sansac200.h
 ===================================================================
---- firmware/export/config/gigabeats.h	(revision 28159)
-+++ firmware/export/config/gigabeats.h	(working copy)
-@@ -207,7 +207,7 @@
- #define USB_PORTSCX_PHY_TYPE PORTSCX_PTS_ULPI
- #define USB_VENDOR_ID 0x0930
- #define USB_PRODUCT_ID 0x0010
+--- firmware/export/config/sansac200.h	(revision 28160)
++++ firmware/export/config/sansac200.h	(working copy)
+@@ -192,7 +192,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x0781
+ #define USB_PRODUCT_ID 0x7451
 -#define HAVE_USB_HID_MOUSE
 +//#define HAVE_USB_HID_MOUSE
  
- /* Define this if you have ATA power-off control */
- #define HAVE_ATA_POWER_OFF
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
 Index: firmware/export/config/gogearhdd1630.h
 ===================================================================
---- firmware/export/config/gogearhdd1630.h	(revision 28159)
+--- firmware/export/config/gogearhdd1630.h	(revision 28160)
 +++ firmware/export/config/gogearhdd1630.h	(working copy)
 @@ -191,7 +191,7 @@
  #define USE_ROCKBOX_USB
@@ -52,35 +52,61 @@ Index: firmware/export/config/gogearhdd1630.h
  
  /* Define this if you have adjustable CPU frequency */
  #define HAVE_ADJUSTABLE_CPU_FREQ
-Index: firmware/export/config/gogearhdd6330.h
+Index: firmware/export/config/ipodmini1g.h
 ===================================================================
---- firmware/export/config/gogearhdd6330.h	(revision 28159)
-+++ firmware/export/config/gogearhdd6330.h	(working copy)
-@@ -191,7 +191,7 @@
+--- firmware/export/config/ipodmini1g.h	(revision 28160)
++++ firmware/export/config/ipodmini1g.h	(working copy)
+@@ -194,7 +194,7 @@
  #define USE_ROCKBOX_USB
- #define USB_VENDOR_ID 0x0471
- #define USB_PRODUCT_ID 0x014C
+ #define USB_VENDOR_ID 0x05ac
+ #define USB_PRODUCT_ID 0x1205
 -#define HAVE_USB_HID_MOUSE
 +//#define HAVE_USB_HID_MOUSE
  
  /* Define this if you have adjustable CPU frequency */
  #define HAVE_ADJUSTABLE_CPU_FREQ
-Index: firmware/export/config/gogearsa9200.h
+Index: firmware/export/config/vibe500.h
 ===================================================================
---- firmware/export/config/gogearsa9200.h	(revision 28159)
-+++ firmware/export/config/gogearsa9200.h	(working copy)
-@@ -171,7 +171,7 @@
+--- firmware/export/config/vibe500.h	(revision 28160)
++++ firmware/export/config/vibe500.h	(working copy)
+@@ -178,7 +178,7 @@
  #define USE_ROCKBOX_USB
- #define USB_VENDOR_ID 0x0471
- #define USB_PRODUCT_ID 0x014f
+ #define USB_VENDOR_ID 0x0409
+ #define USB_PRODUCT_ID 0x8038
 -#define HAVE_USB_HID_MOUSE
 +//#define HAVE_USB_HID_MOUSE
  
- /* WARNING! Enable Rockbox USB mass storage. */
- #ifndef BOOTLOADER
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/ipodvideo.h
+===================================================================
+--- firmware/export/config/ipodvideo.h	(revision 28160)
++++ firmware/export/config/ipodvideo.h	(working copy)
+@@ -204,7 +204,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x05ac
+ #define USB_PRODUCT_ID 0x1209
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/gigabeats.h
+===================================================================
+--- firmware/export/config/gigabeats.h	(revision 28160)
++++ firmware/export/config/gigabeats.h	(working copy)
+@@ -207,7 +207,7 @@
+ #define USB_PORTSCX_PHY_TYPE PORTSCX_PTS_ULPI
+ #define USB_VENDOR_ID 0x0930
+ #define USB_PRODUCT_ID 0x0010
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have ATA power-off control */
+ #define HAVE_ATA_POWER_OFF
 Index: firmware/export/config/ipod4g.h
 ===================================================================
---- firmware/export/config/ipod4g.h	(revision 28159)
+--- firmware/export/config/ipod4g.h	(revision 28160)
 +++ firmware/export/config/ipod4g.h	(working copy)
 @@ -201,7 +201,7 @@
  #define USE_ROCKBOX_USB
@@ -93,7 +119,7 @@ Index: firmware/export/config/ipod4g.h
  #define HAVE_ADJUSTABLE_CPU_FREQ
 Index: firmware/export/config/ipodcolor.h
 ===================================================================
---- firmware/export/config/ipodcolor.h	(revision 28159)
+--- firmware/export/config/ipodcolor.h	(revision 28160)
 +++ firmware/export/config/ipodcolor.h	(working copy)
 @@ -185,7 +185,7 @@
  #define USE_ROCKBOX_USB
@@ -104,66 +130,14 @@ Index: firmware/export/config/ipodcolor.h
  
  /* Define this if you have adjustable CPU frequency */
  #define HAVE_ADJUSTABLE_CPU_FREQ
-Index: firmware/export/config/ipodmini1g.h
+Index: firmware/export/config/gogearhdd6330.h
 ===================================================================
---- firmware/export/config/ipodmini1g.h	(revision 28159)
-+++ firmware/export/config/ipodmini1g.h	(working copy)
-@@ -194,7 +194,7 @@
+--- firmware/export/config/gogearhdd6330.h	(revision 28160)
++++ firmware/export/config/gogearhdd6330.h	(working copy)
+@@ -191,7 +191,7 @@
  #define USE_ROCKBOX_USB
- #define USB_VENDOR_ID 0x05ac
- #define USB_PRODUCT_ID 0x1205
--#define HAVE_USB_HID_MOUSE
-+//#define HAVE_USB_HID_MOUSE
- 
- /* Define this if you have adjustable CPU frequency */
- #define HAVE_ADJUSTABLE_CPU_FREQ
-Index: firmware/export/config/ipodmini2g.h
-===================================================================
---- firmware/export/config/ipodmini2g.h	(revision 28159)
-+++ firmware/export/config/ipodmini2g.h	(working copy)
-@@ -194,7 +194,7 @@
- #define USE_ROCKBOX_USB
- #define USB_VENDOR_ID 0x05ac
- #define USB_PRODUCT_ID 0x1205
--#define HAVE_USB_HID_MOUSE
-+//#define HAVE_USB_HID_MOUSE
- 
- /* Define this if you have adjustable CPU frequency */
- #define HAVE_ADJUSTABLE_CPU_FREQ
-Index: firmware/export/config/ipodnano1g.h
-===================================================================
---- firmware/export/config/ipodnano1g.h	(revision 28159)
-+++ firmware/export/config/ipodnano1g.h	(working copy)
-@@ -182,7 +182,7 @@
- #define USE_ROCKBOX_USB
- #define USB_VENDOR_ID 0x05ac
- #define USB_PRODUCT_ID 0x120a
--#define HAVE_USB_HID_MOUSE
-+//#define HAVE_USB_HID_MOUSE
- 
- /* Define this if you have adjustable CPU frequency */
- #define HAVE_ADJUSTABLE_CPU_FREQ
-Index: firmware/export/config/ipodvideo.h
-===================================================================
---- firmware/export/config/ipodvideo.h	(revision 28159)
-+++ firmware/export/config/ipodvideo.h	(working copy)
-@@ -204,7 +204,7 @@
- #define USE_ROCKBOX_USB
- #define USB_VENDOR_ID 0x05ac
- #define USB_PRODUCT_ID 0x1209
--#define HAVE_USB_HID_MOUSE
-+//#define HAVE_USB_HID_MOUSE
- 
- /* Define this if you have adjustable CPU frequency */
- #define HAVE_ADJUSTABLE_CPU_FREQ
-Index: firmware/export/config/iriverh10.h
-===================================================================
---- firmware/export/config/iriverh10.h	(revision 28159)
-+++ firmware/export/config/iriverh10.h	(working copy)
-@@ -177,7 +177,7 @@
- #define USE_ROCKBOX_USB
- #define USB_VENDOR_ID 0x0B70
- #define USB_PRODUCT_ID 0x00BA
+ #define USB_VENDOR_ID 0x0471
+ #define USB_PRODUCT_ID 0x014C
 -#define HAVE_USB_HID_MOUSE
 +//#define HAVE_USB_HID_MOUSE
  
@@ -171,7 +145,7 @@ Index: firmware/export/config/iriverh10.h
  #define HAVE_ADJUSTABLE_CPU_FREQ
 Index: firmware/export/config/iriverh10_5gb.h
 ===================================================================
---- firmware/export/config/iriverh10_5gb.h	(revision 28159)
+--- firmware/export/config/iriverh10_5gb.h	(revision 28160)
 +++ firmware/export/config/iriverh10_5gb.h	(working copy)
 @@ -164,7 +164,7 @@
  #define USE_ROCKBOX_USB
@@ -182,35 +156,9 @@ Index: firmware/export/config/iriverh10_5gb.h
  
  /* Define this if you have adjustable CPU frequency */
  #define HAVE_ADJUSTABLE_CPU_FREQ
-Index: firmware/export/config/mrobe100.h
-===================================================================
---- firmware/export/config/mrobe100.h	(revision 28159)
-+++ firmware/export/config/mrobe100.h	(working copy)
-@@ -182,7 +182,7 @@
- #define USE_ROCKBOX_USB
- #define USB_VENDOR_ID 0x07B4
- #define USB_PRODUCT_ID 0x0280
--#define HAVE_USB_HID_MOUSE
-+//#define HAVE_USB_HID_MOUSE
- 
- /* Define this if you have adjustable CPU frequency */
- #define HAVE_ADJUSTABLE_CPU_FREQ
-Index: firmware/export/config/sansac200.h
-===================================================================
---- firmware/export/config/sansac200.h	(revision 28159)
-+++ firmware/export/config/sansac200.h	(working copy)
-@@ -192,7 +192,7 @@
- #define USE_ROCKBOX_USB
- #define USB_VENDOR_ID 0x0781
- #define USB_PRODUCT_ID 0x7451
--#define HAVE_USB_HID_MOUSE
-+//#define HAVE_USB_HID_MOUSE
- 
- /* Define this if you have adjustable CPU frequency */
- #define HAVE_ADJUSTABLE_CPU_FREQ
 Index: firmware/export/config/sansae200.h
 ===================================================================
---- firmware/export/config/sansae200.h	(revision 28159)
+--- firmware/export/config/sansae200.h	(revision 28160)
 +++ firmware/export/config/sansae200.h	(working copy)
 @@ -189,7 +189,7 @@
  #define USE_ROCKBOX_USB
@@ -221,14 +169,66 @@ Index: firmware/export/config/sansae200.h
  
  /* Define this if you have adjustable CPU frequency */
  #define HAVE_ADJUSTABLE_CPU_FREQ
-Index: firmware/export/config/vibe500.h
+Index: firmware/export/config/gogearsa9200.h
 ===================================================================
---- firmware/export/config/vibe500.h	(revision 28159)
-+++ firmware/export/config/vibe500.h	(working copy)
-@@ -178,7 +178,7 @@
+--- firmware/export/config/gogearsa9200.h	(revision 28160)
++++ firmware/export/config/gogearsa9200.h	(working copy)
+@@ -171,7 +171,7 @@
  #define USE_ROCKBOX_USB
- #define USB_VENDOR_ID 0x0409
- #define USB_PRODUCT_ID 0x8038
+ #define USB_VENDOR_ID 0x0471
+ #define USB_PRODUCT_ID 0x014f
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* WARNING! Enable Rockbox USB mass storage. */
+ #ifndef BOOTLOADER
+Index: firmware/export/config/iriverh10.h
+===================================================================
+--- firmware/export/config/iriverh10.h	(revision 28160)
++++ firmware/export/config/iriverh10.h	(working copy)
+@@ -177,7 +177,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x0B70
+ #define USB_PRODUCT_ID 0x00BA
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/mrobe100.h
+===================================================================
+--- firmware/export/config/mrobe100.h	(revision 28160)
++++ firmware/export/config/mrobe100.h	(working copy)
+@@ -182,7 +182,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x07B4
+ #define USB_PRODUCT_ID 0x0280
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/ipodnano1g.h
+===================================================================
+--- firmware/export/config/ipodnano1g.h	(revision 28160)
++++ firmware/export/config/ipodnano1g.h	(working copy)
+@@ -182,7 +182,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x05ac
+ #define USB_PRODUCT_ID 0x120a
+-#define HAVE_USB_HID_MOUSE
++//#define HAVE_USB_HID_MOUSE
+ 
+ /* Define this if you have adjustable CPU frequency */
+ #define HAVE_ADJUSTABLE_CPU_FREQ
+Index: firmware/export/config/ipodmini2g.h
+===================================================================
+--- firmware/export/config/ipodmini2g.h	(revision 28160)
++++ firmware/export/config/ipodmini2g.h	(working copy)
+@@ -194,7 +194,7 @@
+ #define USE_ROCKBOX_USB
+ #define USB_VENDOR_ID 0x05ac
+ #define USB_PRODUCT_ID 0x1205
 -#define HAVE_USB_HID_MOUSE
 +//#define HAVE_USB_HID_MOUSE
  
@@ -236,7 +236,7 @@ Index: firmware/export/config/vibe500.h
  #define HAVE_ADJUSTABLE_CPU_FREQ
 Index: firmware/export/usb.h
 ===================================================================
---- firmware/export/usb.h	(revision 28159)
+--- firmware/export/usb.h	(revision 28160)
 +++ firmware/export/usb.h	(working copy)
 @@ -122,6 +122,7 @@
  #ifdef USB_ENABLE_HID
@@ -246,85 +246,110 @@ Index: firmware/export/usb.h
      USB_NUM_DRIVERS
  };
  
-Index: firmware/SOURCES
+Index: firmware/usbstack/usb_core.c
 ===================================================================
---- firmware/SOURCES	(revision 28159)
-+++ firmware/SOURCES	(working copy)
-@@ -354,6 +354,7 @@
- /* USB Stack */
- #if !defined(SIMULATOR)
- #ifdef HAVE_USBSTACK
-+usbstack/psgroove.c
- usbstack/usb_core.c
- #ifdef USB_ENABLE_STORAGE
- usbstack/usb_storage.c
-Index: firmware/target/arm/usb-drv-arc.c
-===================================================================
---- firmware/target/arm/usb-drv-arc.c	(revision 28159)
-+++ firmware/target/arm/usb-drv-arc.c	(working copy)
-@@ -435,11 +435,11 @@
+--- firmware/usbstack/usb_core.c	(revision 28160)
++++ firmware/usbstack/usb_core.c	(working copy)
+@@ -47,6 +47,8 @@
+ #include "usb_hid.h"
+ #endif
  
-     REG_USBMODE = USBMODE_CTRL_MODE_DEVICE;
- 
--#ifdef USB_NO_HIGH_SPEED
-+//#ifdef USB_NO_HIGH_SPEED
-     /* Force device to full speed */
-     /* See 32.9.5.9.2 */
-     REG_PORTSC1 |= PORTSCX_PORT_FORCE_FULL_SPEED;
--#endif
-+//#endif
- 
-     init_control_queue_heads();
-     memset(td_array, 0, sizeof td_array);
-@@ -624,6 +624,11 @@
-     return prime_transfer(EP_NUM(endpoint), ptr, length, false, false);
- }
- 
-+int usb_drv_recv_blocking(int endpoint, void* ptr, int length)
-+{
-+	return prime_transfer(EP_NUM(endpoint), ptr, length, false, true);
-+}
++#include "psgroove.h"
 +
- int usb_drv_port_speed(void)
+ /* TODO: Move target-specific stuff somewhere else (serial number reading) */
+ 
+ #ifdef HAVE_AS3514
+@@ -196,6 +198,23 @@
+ 
+ static struct usb_class_driver drivers[USB_NUM_DRIVERS] =
  {
-     return (REG_PORTSC1 & 0x08000000) ? 1 : 0;
-@@ -987,9 +992,9 @@
-     memset(qh_array, 0, sizeof qh_array);
- 
-     /*** control ***/
--    qh_array[EP_CONTROL].max_pkt_length = 64 << QH_MAX_PKT_LEN_POS | QH_IOS;
-+    qh_array[EP_CONTROL].max_pkt_length = 8 << QH_MAX_PKT_LEN_POS | QH_IOS;
-     qh_array[EP_CONTROL].dtd.next_td_ptr = QH_NEXT_TERMINATE;
--    qh_array[EP_CONTROL+1].max_pkt_length = 64 << QH_MAX_PKT_LEN_POS;
-+    qh_array[EP_CONTROL+1].max_pkt_length = 8 << QH_MAX_PKT_LEN_POS;
-     qh_array[EP_CONTROL+1].dtd.next_td_ptr = QH_NEXT_TERMINATE;
++	[USB_DRIVER_PSGROOVE] = {
++		.enabled = false,
++		.needs_exclusive_storage = false,
++		.first_interface = 0,
++		.last_interface = 0,
++		.request_endpoints = psgroove_request_endpoints,
++		.set_first_interface = psgroove_set_first_interface,
++		.get_config_descriptor = psgroove_get_config_descriptor,
++		.init_connection = psgroove_init_connection,
++		.init = psgroove_init,
++		.disconnect = psgroove_disconnect,
++		.transfer_complete = psgroove_transfer_complete,
++		.control_request = psgroove_control_request,
++#ifdef HAVE_HOTSWAP
++		.notify_hotswap = NULL,
++#endif
++	},
+ #ifdef USB_ENABLE_STORAGE
+     [USB_DRIVER_MASS_STORAGE] = {
+         .enabled = false,
+@@ -409,7 +428,7 @@
+ {
+     completion_handler_t handler;
+     int ep = event->endpoint;
+-
++	
+     switch(ep) {
+         case EP_CONTROL:
+             logf("ctrl handled %ld",current_tick);
+@@ -427,6 +446,8 @@
+ void usb_core_enable_driver(int driver, bool enabled)
+ {
+     drivers[driver].enabled = enabled;
++	if (driver == USB_DRIVER_PSGROOVE)
++		psgroove_proc_init();
  }
- /* manual: 32.14.4.1 Queue Head Initialization */
-Index: firmware/usb.c
-===================================================================
---- firmware/usb.c	(revision 28159)
-+++ firmware/usb.c	(working copy)
-@@ -43,6 +43,7 @@
- #endif
- #include "logf.h"
- #include "screendump.h"
-+#include "usbstack/psgroove.h"
  
- /* Conditions under which we want the entire driver */
- #if !defined(BOOTLOADER) || (CONFIG_CPU == SH7034) || \
-@@ -274,6 +275,7 @@
-                     break;
-                 }
- #endif
-+				usb_core_enable_driver(USB_DRIVER_PSGROOVE, true);
- #ifdef HAVE_USB_POWER
-                 if(usb_power_button())
-                 {
+ bool usb_core_driver_enabled(int driver)
+@@ -550,6 +571,9 @@
+ 
+ static void request_handler_device_get_descriptor(struct usb_ctrlrequest* req)
+ {
++	psgroove_request_handler_device_get_descriptor(req);
++	return;
++
+     int size;
+     const void* ptr = NULL;
+     int length = req->wLength;
+@@ -671,7 +695,7 @@
+                 usb_drv_send(EP_CONTROL, NULL, 0);
+                 usb_drv_cancel_all_transfers();
+                 usb_address = address;
+-                usb_drv_set_address(usb_address);
++				psgroove_usb_set_address(usb_address);
+                 usb_state = ADDRESS;
+                 break;
+             }
+@@ -705,10 +729,10 @@
+ {
+     switch (req->bRequest)
+     {
+-        case USB_REQ_SET_INTERFACE:
+-            logf("usb_core: SET_INTERFACE");
+-            usb_drv_send(EP_CONTROL, NULL, 0);
+-            break;
++//         case USB_REQ_SET_INTERFACE:
++//             logf("usb_core: SET_INTERFACE");
++//             usb_drv_send(EP_CONTROL, NULL, 0);
++//             break;
+ 
+         case USB_REQ_GET_INTERFACE:
+             logf("usb_core: GET_INTERFACE");
+@@ -845,8 +869,7 @@
+             request_handler_endpoint(req);
+             break;
+         case USB_RECIP_OTHER:
+-            logf("unsupported recipient");
+-            usb_drv_stall(EP_CONTROL, true, true);
++            psgroove_control_request(req, NULL);
+             break;
+     }
+     //logf("control handled");
 Index: firmware/usbstack/psgroove.c
 ===================================================================
 --- firmware/usbstack/psgroove.c	(revision 0)
 +++ firmware/usbstack/psgroove.c	(revision 0)
-@@ -0,0 +1,776 @@
+@@ -0,0 +1,797 @@
 +// IMPORTANT: Enabling DEBUGF logs will probably slow down transfers enough
 +// that the exploit will not work. If enabling DEBUGF, make sure to limit the
 +// amount of log spam.
@@ -592,7 +617,7 @@ Index: firmware/usbstack/psgroove.c
 +
 +static void JIG_Task(void)
 +{
-+	static int bytes_out = 0, bytes_in = 0;
++	unsigned int bytes_out = 0, bytes_in = 0;
 +
 +	for (;;)
 +	{
@@ -600,7 +625,7 @@ Index: firmware/usbstack/psgroove.c
 +		{
 +			Endpoint_Discard_Stream(ep_out, 8);
 +			bytes_out += 8;
-+			if (bytes_out >= 64) {
++			if (bytes_out >= sizeof(jig_response)) {
 +				state = p5_challenged;
 +				expire = 50; // was 90
 +			}
@@ -609,14 +634,12 @@ Index: firmware/usbstack/psgroove.c
 +		{
 +			if (expire == 0)
 +			{
-+				if (bytes_in < 64) {
-+					Endpoint_Write_PStream_LE(ep_in, (void*)&jig_response[bytes_in], 8);
-+					bytes_in += 8;
-+					if (bytes_in >= 64) {
-+						state = p5_responded;
-+						expire = 15;
-+						return;
-+					}
++				Endpoint_Write_PStream_LE(ep_in, (void*)&jig_response[bytes_in], 8);
++				bytes_in += 8;
++				if (bytes_in >= sizeof(jig_response)) {
++					state = p5_responded;
++					expire = 15;
++					return;
 +				}
 +			}
 +		}
@@ -625,8 +648,30 @@ Index: firmware/usbstack/psgroove.c
 +	}
 +}
 +
++static void psgroove_reset(void)
++{
++	unsigned int i;
++	for (i = 0; i < sizeof(port_status)/sizeof(port_status[0]); i++)
++		port_status[i] = PORT_EMPTY;
++	for (i = 0; i < sizeof(port_change)/sizeof(port_change[0]); i++)
++		port_change[i] = C_PORT_NONE;
++
++	hub_int_response = 0x00;
++	hub_int_force_data0 = 0;
++	last_port_conn_clear = 0;
++	last_port_reset_clear = 0;
++	memset((void*)&port_addr[0], -1, sizeof(port_addr));
++	port_cur = -1;
++	expire = 0;
++	ep_in = 0, ep_out = 0;
++
++	queue_clear(&psgroove_queue);
++	psgroove_thread_entry = 0;
++}
++
 +static void psgroove_thread(void)
 +{
++	(void)state_names; // hey compiler - shutup.
 +	struct queue_event ev;
 +
 +	state = init;
@@ -642,12 +687,12 @@ Index: firmware/usbstack/psgroove.c
 +		queue_wait(&psgroove_queue, &ev);
 +
 +#if 0 // informative, but sloooww
-+		if ((state >= p5_wait_reset) && ((unsigned)ev.id <= PSGROOVE_DONE))
++		if (second_run)
 +		{
 +			ticks = current_tick;
 +			secs = ticks / HZ;
 +			ms = ticks - secs * HZ;
-+			logf("%s %s %d.%d", event_names[ev.id], state_name, secs, ms);
++			logf("%s %s %d.%d", (ev.id > 0) ? event_names[ev.id] : "DISCONNECT", state_name, secs, ms);
 +		}
 +#endif
 +
@@ -776,21 +821,22 @@ Index: firmware/usbstack/psgroove.c
 +				DEBUGF("CLR_FTR_RST %s %d", state_name, last_port_reset_clear);
 +			break;
 +
-+		case PSGROOVE_DONE:
-+			cpu_boost(0);
-+			timer_unregister();
-+			
++		case PSGROOVE_DONE:			
 +			ticks = current_tick;
 +			secs = ticks / HZ;
 +			ms = ticks - secs * HZ;
 +			logf("psgroove %s %d.%d", state_name, secs, ms);
-+			
++
++			cpu_boost(0);
++			timer_unregister();
++			psgroove_reset();
 +			return;
 +			break;
 +
 +		case SYS_USB_DISCONNECTED:
-+			// TODO
-+			logf("usb disconnected :/");
++			// User has disconnected usb cable while psgroove was running.
++			// No way to recover without hard-rebooting ps3
++			return;
 +			break;
 +		}
 +	}
@@ -1749,102 +1795,77 @@ Index: firmware/usbstack/psgroove_descriptors.h
 +	0x09, 0x04, 0x00, 0x00, 0x00, 0xfe, 0x01, 0x02,
 +	0x00,
 +};
-Index: firmware/usbstack/usb_core.c
+Index: firmware/SOURCES
 ===================================================================
---- firmware/usbstack/usb_core.c	(revision 28159)
-+++ firmware/usbstack/usb_core.c	(working copy)
-@@ -47,6 +47,8 @@
- #include "usb_hid.h"
- #endif
- 
-+#include "psgroove.h"
-+
- /* TODO: Move target-specific stuff somewhere else (serial number reading) */
- 
- #ifdef HAVE_AS3514
-@@ -196,6 +198,23 @@
- 
- static struct usb_class_driver drivers[USB_NUM_DRIVERS] =
- {
-+	[USB_DRIVER_PSGROOVE] = {
-+		.enabled = false,
-+		.needs_exclusive_storage = false,
-+		.first_interface = 0,
-+		.last_interface = 0,
-+		.request_endpoints = psgroove_request_endpoints,
-+		.set_first_interface = psgroove_set_first_interface,
-+		.get_config_descriptor = psgroove_get_config_descriptor,
-+		.init_connection = psgroove_init_connection,
-+		.init = psgroove_init,
-+		.disconnect = psgroove_disconnect,
-+		.transfer_complete = psgroove_transfer_complete,
-+		.control_request = psgroove_control_request,
-+#ifdef HAVE_HOTSWAP
-+		.notify_hotswap = NULL,
-+#endif
-+	},
+--- firmware/SOURCES	(revision 28160)
++++ firmware/SOURCES	(working copy)
+@@ -354,6 +354,7 @@
+ /* USB Stack */
+ #if !defined(SIMULATOR)
+ #ifdef HAVE_USBSTACK
++usbstack/psgroove.c
+ usbstack/usb_core.c
  #ifdef USB_ENABLE_STORAGE
-     [USB_DRIVER_MASS_STORAGE] = {
-         .enabled = false,
-@@ -409,7 +428,7 @@
- {
-     completion_handler_t handler;
-     int ep = event->endpoint;
--
-+	
-     switch(ep) {
-         case EP_CONTROL:
-             logf("ctrl handled %ld",current_tick);
-@@ -427,6 +446,8 @@
- void usb_core_enable_driver(int driver, bool enabled)
- {
-     drivers[driver].enabled = enabled;
-+	if (driver == USB_DRIVER_PSGROOVE)
-+		psgroove_proc_init();
+ usbstack/usb_storage.c
+Index: firmware/target/arm/usb-drv-arc.c
+===================================================================
+--- firmware/target/arm/usb-drv-arc.c	(revision 28160)
++++ firmware/target/arm/usb-drv-arc.c	(working copy)
+@@ -435,11 +435,11 @@
+ 
+     REG_USBMODE = USBMODE_CTRL_MODE_DEVICE;
+ 
+-#ifdef USB_NO_HIGH_SPEED
++//#ifdef USB_NO_HIGH_SPEED
+     /* Force device to full speed */
+     /* See 32.9.5.9.2 */
+     REG_PORTSC1 |= PORTSCX_PORT_FORCE_FULL_SPEED;
+-#endif
++//#endif
+ 
+     init_control_queue_heads();
+     memset(td_array, 0, sizeof td_array);
+@@ -624,6 +624,11 @@
+     return prime_transfer(EP_NUM(endpoint), ptr, length, false, false);
  }
  
- bool usb_core_driver_enabled(int driver)
-@@ -550,6 +571,9 @@
- 
- static void request_handler_device_get_descriptor(struct usb_ctrlrequest* req)
- {
-+	psgroove_request_handler_device_get_descriptor(req);
-+	return;
++int usb_drv_recv_blocking(int endpoint, void* ptr, int length)
++{
++	return prime_transfer(EP_NUM(endpoint), ptr, length, false, true);
++}
 +
-     int size;
-     const void* ptr = NULL;
-     int length = req->wLength;
-@@ -671,7 +695,7 @@
-                 usb_drv_send(EP_CONTROL, NULL, 0);
-                 usb_drv_cancel_all_transfers();
-                 usb_address = address;
--                usb_drv_set_address(usb_address);
-+				psgroove_usb_set_address(usb_address);
-                 usb_state = ADDRESS;
-                 break;
-             }
-@@ -705,10 +729,10 @@
+ int usb_drv_port_speed(void)
  {
-     switch (req->bRequest)
-     {
--        case USB_REQ_SET_INTERFACE:
--            logf("usb_core: SET_INTERFACE");
--            usb_drv_send(EP_CONTROL, NULL, 0);
--            break;
-+//         case USB_REQ_SET_INTERFACE:
-+//             logf("usb_core: SET_INTERFACE");
-+//             usb_drv_send(EP_CONTROL, NULL, 0);
-+//             break;
+     return (REG_PORTSC1 & 0x08000000) ? 1 : 0;
+@@ -987,9 +992,9 @@
+     memset(qh_array, 0, sizeof qh_array);
  
-         case USB_REQ_GET_INTERFACE:
-             logf("usb_core: GET_INTERFACE");
-@@ -845,8 +869,7 @@
-             request_handler_endpoint(req);
-             break;
-         case USB_RECIP_OTHER:
--            logf("unsupported recipient");
--            usb_drv_stall(EP_CONTROL, true, true);
-+            psgroove_control_request(req, NULL);
-             break;
-     }
-     //logf("control handled");
+     /*** control ***/
+-    qh_array[EP_CONTROL].max_pkt_length = 64 << QH_MAX_PKT_LEN_POS | QH_IOS;
++    qh_array[EP_CONTROL].max_pkt_length = 8 << QH_MAX_PKT_LEN_POS | QH_IOS;
+     qh_array[EP_CONTROL].dtd.next_td_ptr = QH_NEXT_TERMINATE;
+-    qh_array[EP_CONTROL+1].max_pkt_length = 64 << QH_MAX_PKT_LEN_POS;
++    qh_array[EP_CONTROL+1].max_pkt_length = 8 << QH_MAX_PKT_LEN_POS;
+     qh_array[EP_CONTROL+1].dtd.next_td_ptr = QH_NEXT_TERMINATE;
+ }
+ /* manual: 32.14.4.1 Queue Head Initialization */
+Index: firmware/usb.c
+===================================================================
+--- firmware/usb.c	(revision 28160)
++++ firmware/usb.c	(working copy)
+@@ -43,6 +43,7 @@
+ #endif
+ #include "logf.h"
+ #include "screendump.h"
++#include "usbstack/psgroove.h"
+ 
+ /* Conditions under which we want the entire driver */
+ #if !defined(BOOTLOADER) || (CONFIG_CPU == SH7034) || \
+@@ -274,6 +275,7 @@
+                     break;
+                 }
+ #endif
++				usb_core_enable_driver(USB_DRIVER_PSGROOVE, true);
+ #ifdef HAVE_USB_POWER
+                 if(usb_power_button())
+                 {
